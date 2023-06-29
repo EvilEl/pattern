@@ -1,0 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+th {
+  color: red;
+}
+td {
+  color: blue;
+}
