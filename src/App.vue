@@ -6,6 +6,7 @@ const { fullPath } = usePathsMainPage()
 
 <template>
   <div>
+    test
     <Breadcrumb :home="{ url: '/', icon: 'pi pi-home' }" :model="fullPath">
       <template #item="{ item }">
         <div v-if="item.url">
