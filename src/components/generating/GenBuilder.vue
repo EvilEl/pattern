@@ -1,9 +1,9 @@
-<script lang="ts" setup></script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    {{
-      `
+  <highlightjs
+    language="js"
+    code="
       class User {
   constructor(name, email, age) {
     this.name = name;
@@ -40,8 +40,6 @@ const user1 = new UserBuilder('John')
                   .build();
 
 console.log(user1); // User { name: 'John', email: 'john@example.com', age: 30 }
-      `
-    }}
-  </div>
+    "
+  />
 </template>
-<style></style>

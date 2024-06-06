@@ -1,8 +1,7 @@
 <template>
-  <div>
-    {{
-      `
-      // Базовый класс
+  <highlightjs
+    language="js"
+    code="Базовый класс
 class BaseClass {
   constructor(property1) {
     this.property1 = property1;
@@ -59,10 +58,8 @@ const object3 = factory.createObject('unknown', 'default');
 object1.method1(); // Method 1 of Type 1
 object2.method1(); // Method 1 of Type 2
 object3.method1(); // Method 1 of BaseClass
-
-    `
-    }}
-  </div>
+"
+  />
 </template>
 <script lang="ts" setup></script>
 <style></style>

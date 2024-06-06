@@ -12,7 +12,13 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "@vueuse/core": "^10.10.0",
+    "highlight.js": "^11.9.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^3.52.0",
+    "vue": "^3.3.13",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
