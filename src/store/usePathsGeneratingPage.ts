@@ -7,14 +7,24 @@ export const usePathsGeneratingPage = createGlobalState(() => {
 
   const paths: IPaths[] = [
     {
-      label: 'builder',
-      name: 'builder',
-      title: 'Строитель'
+      label: 'abstract-fabrica',
+      name: 'abstract-fabrica',
+      title: 'Абстрактная фабрика'
     },
     {
       label: 'fabrica',
       name: 'fabrica',
       title: 'Фабрика'
+    },
+    {
+      label: 'builder',
+      name: 'builder',
+      title: 'Строитель'
+    },
+    {
+      label: 'singleton',
+      name: 'singleton',
+      title: 'Одиночка'
     }
   ]
 
