@@ -1,4 +1,3 @@
-<script setup></script>
 <template>
   <p>
     Паттерн одиночка (Singleton) в JavaScript используется для создания объекта, который будет иметь

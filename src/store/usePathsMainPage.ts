@@ -10,6 +10,16 @@ export const usePathsMainPage = createGlobalState(() => {
       label: 'generating',
       name: 'generating',
       title: 'Порождающие'
+    },
+    {
+      label: 'structural',
+      name: 'structural',
+      title: 'Структурные'
+    },
+    {
+      label: 'behavioral',
+      name: 'behavioral',
+      title: 'Поведенческие'
     }
   ]
 
