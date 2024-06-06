@@ -14,7 +14,12 @@ const { selectedTabIndex } = useGenerating()
       </router-link>
     </template>
   </TabMenu>
-
-  <RouterView />
+  <div class="generating">
+    <RouterView />
+  </div>
 </template>
-<style scoped></style>
+<style scoped>
+.generating {
+  margin-top: 10px;
+}
+</style>

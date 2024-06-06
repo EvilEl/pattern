@@ -20,7 +20,7 @@ const routes = [
       {
         path: 'builder',
         name: 'builder',
-        component: () => import('../components/generating/GenBuilder.vue'),
+        component: () => import('../components/generating/Builder.vue'),
         meta: {
           title: 'Строитель'
         }
@@ -28,9 +28,25 @@ const routes = [
       {
         path: 'fabrica',
         name: 'fabrica',
-        component: () => import('../components/generating/GenFabrica.vue'),
+        component: () => import('../components/generating/Fabrica.vue'),
         meta: {
           title: 'Фабрика'
+        }
+      },
+      {
+        path: 'singleton',
+        name: 'singleton',
+        component: () => import('../components/generating/Singleton.vue'),
+        meta: {
+          title: 'Одиночка'
+        }
+      },
+      {
+        path: 'abstract-fabrica',
+        name: 'abstract-fabrica',
+        component: () => import('../components/generating/AbstractFabrica.vue'),
+        meta: {
+          title: 'Абстрактная фабрика'
         }
       }
     ]
