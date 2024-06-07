@@ -1,19 +1,13 @@
 <script setup lang="ts">
 import { usePathsGeneratingPage } from '@/store'
-import TabMenu from 'primevue/tabmenu'
+import TabMenuPaths from '@/components/TabMenuPaths.vue'
 import { useHandlerTabMenu } from '@/composables'
 
 const { paths } = usePathsGeneratingPage()
 const { selectedTabIndex } = useHandlerTabMenu(paths)
 </script>
 <template>
-  <TabMenu :active-index="selectedTabIndex" :model="paths">
-    <template #item="{ item }">
-      <router-link class="p-menuitem-link" :to="{ name: String(item.name) }">
-        {{ item.title }}
-      </router-link>
-    </template>
-  </TabMenu>
+  <TabMenuPaths :selected-tab-index="selectedTabIndex" :paths="paths" />
   <div class="generating">
     <RouterView />
   </div>
