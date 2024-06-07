@@ -1,20 +1,7 @@
-body {
-}
+@import 'highlight.js/styles/stackoverflow-light.css';
+@import 'primevue/resources/themes/aura-light-green/theme.css';
+@import 'primeicons/primeicons.css';
+
 a {
   cursor: pointer;
-}
-
-th {
-  color: red;
-}
-td {
-  color: blue;
-}
-
-.title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.description {
-  margin-top: 10px;
 }
