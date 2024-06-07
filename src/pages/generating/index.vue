@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { usePathsGeneratingPage } from '../../store/usePathsGeneratingPage'
+import { usePathsGeneratingPage } from '@/store'
 import TabMenu from 'primevue/tabmenu'
 import { useHandlerTabMenu } from '@/composables'
 

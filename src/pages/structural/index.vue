@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { usePathsStructuralPage } from '@/store/usePathsStructuralPage'
+import { usePathsStructuralPage } from '@/store'
 import TabMenu from 'primevue/tabmenu'
 import { useHandlerTabMenu } from '@/composables'
 
 const { paths } = usePathsStructuralPage()
+
 const { selectedTabIndex } = useHandlerTabMenu(paths)
 </script>
 <template>
@@ -19,7 +20,7 @@ const { selectedTabIndex } = useHandlerTabMenu(paths)
   </div>
 </template>
 <style scoped>
-.generating {
+.strutural {
   margin-top: 10px;
 }
 </style>

@@ -12,18 +12,18 @@ export const usePathsStructuralPage = createGlobalState(() => {
       title: 'Адаптер'
     },
     {
-      label: 'Decorator',
-      name: 'Decorator',
+      label: 'decorator',
+      name: 'decorator',
       title: 'Декоратор'
     },
     {
-      label: 'Facade',
-      name: 'Facade',
+      label: 'facade',
+      name: 'facade',
       title: 'Фасад'
     },
     {
-      label: 'Proxy',
-      name: 'Proxy',
+      label: 'proxy',
+      name: 'proxy',
       title: 'Прокси'
     }
   ]

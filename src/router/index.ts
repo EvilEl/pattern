@@ -68,24 +68,24 @@ const routes = [
         }
       },
       {
-        path: 'Decorator',
-        name: 'Decorator',
+        path: 'decorator',
+        name: 'decorator',
         component: () => import('@/components/structural/Decorator.vue'),
         meta: {
           title: 'Декоратор'
         }
       },
       {
-        path: 'Facade',
-        name: 'Facade',
+        path: 'facade',
+        name: 'facade',
         component: () => import('@/components/structural/Facade.vue'),
         meta: {
           title: 'Фасад'
         }
       },
       {
-        path: 'Proxy',
-        name: 'Proxy',
+        path: 'proxy',
+        name: 'proxy',
         component: () => import('@/components/structural/Proxy.vue'),
         meta: {
           title: 'Прокси'
@@ -100,7 +100,40 @@ const routes = [
     meta: {
       title: 'Поведенческие'
     },
-    children: []
+    children: [
+      {
+        path: 'chainResponsibility',
+        name: 'chainResponsibility',
+        component: () => import('@/components/behavioral/ChainResponsibility.vue'),
+        meta: {
+          title: 'Цепочку ответственности'
+        }
+      },
+      {
+        path: 'comand',
+        name: 'comand',
+        component: () => import('@/components/behavioral/Comand.vue'),
+        meta: {
+          title: 'Команду'
+        }
+      },
+      {
+        path: 'observer',
+        name: 'observer',
+        component: () => import('@/components/behavioral/Observer.vue'),
+        meta: {
+          title: 'Наблюдателя'
+        }
+      },
+      {
+        path: 'strategy',
+        name: 'strategy',
+        component: () => import('@/components/behavioral/Strategy.vue'),
+        meta: {
+          title: 'Стратегию'
+        }
+      }
+    ]
   },
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: () => import('../pages/NotFound.vue') }
 ]

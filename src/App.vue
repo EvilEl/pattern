@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Breadcrumb from 'primevue/breadcrumb'
-import { usePathsMainPage } from './store'
+import { usePathsMainPage } from '@/store'
 const { fullPath } = usePathsMainPage()
 </script>
 
