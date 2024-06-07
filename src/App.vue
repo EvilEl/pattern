@@ -6,16 +6,14 @@ const { fullPath } = usePathsMainPage()
 
 <template>
   <div>
-    <Breadcrumb :home="{ url: '/', icon: 'pi pi-home' }" :model="fullPath">
+    <Breadcrumb :home="{ name: 'main', icon: 'pi pi-home' }" :model="fullPath">
       <template #item="{ item }">
-        <div v-if="item.url">
-          <router-link v-slot="{ href, navigate }" :to="item.url" :name="item.name">
-            <a :href="href" @click="navigate">
-              <span :class="[item.icon, 'text-color']" />
-              <span class="text-primary font-semibold">{{ item.title }}</span>
-            </a>
-          </router-link>
-        </div>
+        <router-link v-slot="{ href, navigate }" :to="{ name: item.name }">
+          <a :href="href" @click="navigate">
+            <span :class="[item.icon, 'text-color']" />
+            <span class="text-primary font-semibold">{{ item.title }}</span>
+          </a>
+        </router-link>
       </template>
     </Breadcrumb>
 
