@@ -58,7 +58,40 @@ const routes = [
     meta: {
       title: 'Структурные'
     },
-    children: []
+    children: [
+      {
+        path: 'adapter',
+        name: 'adapter',
+        component: () => import('@/components/structural/Adapter.vue'),
+        meta: {
+          title: 'Адаптер'
+        }
+      },
+      {
+        path: 'Decorator',
+        name: 'Decorator',
+        component: () => import('@/components/structural/Decorator.vue'),
+        meta: {
+          title: 'Декоратор'
+        }
+      },
+      {
+        path: 'Facade',
+        name: 'Facade',
+        component: () => import('@/components/structural/Facade.vue'),
+        meta: {
+          title: 'Фасад'
+        }
+      },
+      {
+        path: 'Proxy',
+        name: 'Proxy',
+        component: () => import('@/components/structural/Proxy.vue'),
+        meta: {
+          title: 'Прокси'
+        }
+      }
+    ]
   },
   {
     path: '/behavioral',

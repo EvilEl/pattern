@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { usePathsGeneratingPage } from '../../store/usePathsGeneratingPage'
 import TabMenu from 'primevue/tabmenu'
-import { useGenerating } from './composables'
+import { useHandlerTabMenu } from '@/composables'
 
 const { paths } = usePathsGeneratingPage()
-const { selectedTabIndex } = useGenerating()
+const { selectedTabIndex } = useHandlerTabMenu(paths)
 </script>
 <template>
   <TabMenu :active-index="selectedTabIndex" :model="paths">
