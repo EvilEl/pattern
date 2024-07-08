@@ -1,10 +1,7 @@
-import { createGlobalState } from '@vueuse/core'
-import { useCreateBreadCrumbs } from '../composables'
-import type { IPaths } from '@/types'
+import { useHandlerTabMenu } from '@/composables'
+import type { IPaths } from '@/types/IPathsMenuTab'
 
-export const usePathsMainPage = createGlobalState(() => {
-  const { fullPath } = useCreateBreadCrumbs()
-
+export function useHandlerPattern() {
   const paths: IPaths[] = [
     {
       label: 'generating',
@@ -22,6 +19,7 @@ export const usePathsMainPage = createGlobalState(() => {
       title: 'Поведенческие'
     }
   ]
+  const { selectedTabIndex } = useHandlerTabMenu(paths)
 
-  return { paths, fullPath }
-})
+  return { selectedTabIndex, paths }
+}

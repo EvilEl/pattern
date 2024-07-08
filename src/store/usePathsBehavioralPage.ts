@@ -1,10 +1,6 @@
-import { createGlobalState } from '@vueuse/core'
-import { useCreateBreadCrumbs } from '../composables'
 import type { IPaths } from '@/types'
 
-export const usePathsBehavioralPage = createGlobalState(() => {
-  const { fullPath } = useCreateBreadCrumbs()
-
+export const usePathsBehavioralPage = () => {
   const paths: IPaths[] = [
     {
       label: 'chainResponsibility',
@@ -28,5 +24,5 @@ export const usePathsBehavioralPage = createGlobalState(() => {
     }
   ]
 
-  return { paths, fullPath }
-})
+  return { paths }
+}
