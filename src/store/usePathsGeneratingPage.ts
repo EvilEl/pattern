@@ -1,10 +1,6 @@
-import { createGlobalState } from '@vueuse/core'
-import { useCreateBreadCrumbs } from '../composables'
 import type { IPaths } from '@/types'
 
-export const usePathsGeneratingPage = createGlobalState(() => {
-  const { fullPath } = useCreateBreadCrumbs()
-
+export const usePathsGeneratingPage = () => {
   const paths: IPaths[] = [
     {
       label: 'abstract-fabrica',
@@ -28,5 +24,5 @@ export const usePathsGeneratingPage = createGlobalState(() => {
     }
   ]
 
-  return { paths, fullPath }
-})
+  return { paths }
+}

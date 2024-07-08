@@ -19,11 +19,11 @@ export function useCreateBreadCrumbs() {
     }))
   }
 
-  const fullPath = computed<IBreadCrumbs[]>(() => {
+  const fullPaths = computed<IBreadCrumbs[]>(() => {
     return getBreadCrumbs(route.matched)
   })
 
   return {
-    fullPath
+    fullPaths
   }
 }
