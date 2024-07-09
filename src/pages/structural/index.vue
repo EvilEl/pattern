@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { usePathsStructuralPage } from '@/store'
+import { usePathsStructuralPage } from './composables'
 import { useHandlerTabMenu } from '@/composables'
 import TabMenuPaths from '@/components/TabMenuPaths.vue'
 

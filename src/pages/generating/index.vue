@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { usePathsGeneratingPage } from '@/store'
+import { usePathsGeneratingPage } from './composables'
 import TabMenuPaths from '@/components/TabMenuPaths.vue'
 import { useHandlerTabMenu } from '@/composables'
 

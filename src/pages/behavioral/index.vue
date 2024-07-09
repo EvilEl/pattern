@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { usePathsBehavioralPage } from '@/store'
+import { usePathsBehavioralPage } from './composables'
 import { useHandlerTabMenu } from '@/composables'
 import TabMenuPaths from '@/components/TabMenuPaths.vue'
 
