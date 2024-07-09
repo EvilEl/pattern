@@ -4,9 +4,9 @@ import type { IPaths } from '@/types'
 
 export function useHandlerTabMenu(paths: IPaths[]) {
   const route = useRoute()
+  const pathsName = paths.map((item) => item.label)
 
   function getTabIndex(): number {
-    const pathsName = paths.map((item) => item.label)
     const routePaths = route.path.split('/').filter((path) => path)
     return pathsName.findIndex((name) => routePaths.includes(name))
   }
