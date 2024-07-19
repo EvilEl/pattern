@@ -36,18 +36,16 @@ const data = [
   <div class="solid">
     <Steper :data="data">
       <template #content="{ step }">
-        <div class="flex flex-col">
-          <p class="">
+        <div class="h-[60vh] mt-10">
+          <p class="mb-5">
             {{ step.description }}
           </p>
-          <div class="h-[60vh] mt-5">
-            <Image
-              :src="step.img"
-              image-class="object-contain h-full w-full"
-              :alt="step.title"
-              preview
-            />
-          </div>
+          <Image
+            :src="step.img"
+            image-class="object-contain h-full w-full"
+            :alt="step.title"
+            preview
+          />
         </div>
       </template>
     </Steper>
