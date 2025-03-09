@@ -10,7 +10,7 @@ const { fullPaths } = useCreateBreadCrumbs()
   <div>
     <Breadcrumb :home="{ label: 'main', icon: 'pi pi-home' }" :model="fullPaths">
       <template #item="{ item }">
-        <router-link v-slot="{ href, navigate }" :to="{ name: item.label }">
+        <router-link v-slot="{ href, navigate }" :to="{ name: String(item.label) }">
           <a :href="href" @click="navigate">
             <span :class="[item.icon, 'text-color']" />
             <span class="text-primary font-semibold">{{ item.title }}</span>
